@@ -1,16 +1,37 @@
-html, body {
-  margin: 0;
-  height: 100%;
-}
-
 body {
   font-family: 'Ubuntu', sans-serif;
   background-color: #faf9f9;
   color: #060606;
+  font-size: 18px;
 }
 
 .main-title {
   font-size: 60px;
   font-family: 'Indie Flower', cursive;
   text-align: center;
+}
+
+/* Large Jumbotron at top of page. */
+.large-image {
+  text-align: center;
+}
+
+/* Three boxes split into thirds at bottom of page. */
+.grid-thirds {
+  text-align: center;
+}
+
+/* Box to the left of the grid */
+.first-box {
+  background-color: #aed6a1;
+}
+
+/* Box in the middle of the grid */
+.second-box {
+  background-color: #F1C9AE;
+}
+
+/* Box to the right of the grid */
+.third-box {
+  background-color: #F1AEB5;
 }
