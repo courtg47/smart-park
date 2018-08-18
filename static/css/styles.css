@@ -1,0 +1,16 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #faf9f9;
+  color: #060606;
+}
+
+.main-title {
+  font-size: 60px;
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+}
