@@ -30,11 +30,9 @@ def _get_user_info():
 def recent_location_media(location_str):
     location_ids = locations()
     location_id = location_ids.get(location_str)
-    print(location_id)
     if not location_id:
         location_id = locations.get('Sloss Furnace')
     params = 'locations/' + str(location_id)
-    print(params)
     return _request({'command': 'media/recent', 'params': params})
 
 
@@ -46,7 +44,6 @@ def _request(args):
     endpoint = 'https://api.instagram.com/v1'
     url = '/'.join([endpoint, params, command])
     url += '?access_token=' + token
-    print(url)
     f = request.urlopen(url)
     json_string = f.read()
     parsed_json = json.loads(json_string)
@@ -54,6 +51,20 @@ def _request(args):
     return parsed_json
 
 
+def get_media_urls():
+    #  Returns a list of urls where images are located
+    response = recent_location_media('Sloss Furnace')
+    data = response.get('data')
+    urls = []
+    for item in data:
+        images = item.get('images')
+        image_info = images.get('standard_resolution')
+        image_url = image_info.get('url')
+        if image_url:
+            urls.append(image_url)
+    return urls
+
+
 def get_test_media():
-    print(recent_location_media('Sloss Furnace'))
+    print(get_media_urls())
     return
