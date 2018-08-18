@@ -19,6 +19,7 @@ body {
 /* Three boxes split into thirds at bottom of page. */
 .grid-thirds {
   text-align: center;
+  padding: 1%;
 }
 
 /* Box to the left of the grid */
@@ -34,4 +35,8 @@ body {
 /* Box to the right of the grid */
 .third-box {
   background-color: #F1AEB5;
+}
+
+.btn {
+  border-radius: 0;
 }
