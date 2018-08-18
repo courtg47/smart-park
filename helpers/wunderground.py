@@ -7,6 +7,7 @@ def get_weather_data():
     endpoint = 'http://api.wunderground.com/api'
     command = 'geolokup/conditions/q/AL/Birmingham.json'
     key = _get_credentials()
+    key = key.strip()
     url = '/'.join([endpoint, key, command])
     f = request.urlopen(url)
     json_string = f.read()
