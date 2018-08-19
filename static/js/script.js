@@ -7,7 +7,7 @@ $(document).ready(function() {
   function clock() {
     const date = new Date();
     let hours = date.getHours();
-    const minutes = date.getMinutes();
+    let minutes = date.getMinutes();
     let seconds = date.getSeconds();
     let halfOfDay = "AM";
 
