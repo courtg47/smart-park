@@ -2,7 +2,7 @@
 $(document).ready(function() {
 
   // Reload page every 4 minutes
-  window.setInterval('reloadPage()', 24000);
+  window.setInterval('reloadPage()', 240000);
 
   function clock() {
     const date = new Date();
