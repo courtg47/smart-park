@@ -13,7 +13,7 @@ from flask import (
     url_for
 )
 
-from helpers import timepractice, instagram
+from helpers import timepractice, instagram, bulletin_picker
 
 app = Flask(__name__)
 
@@ -22,8 +22,17 @@ def homepage():
     """ Render the homepage. """
     the_gif = timepractice.gif_picker()
     insta = instagram.get_recent_instagram()
+    bulletin_info = bulletin_picker.bulletin_picker()
+    colorscheme = bulletin_info[1]
+    bulletin_text = bulletin_info[0]
 
-    return render_template('index.html', gif=the_gif, instagram=insta)
+    return render_template(
+        'index.html',
+        gif=the_gif,
+        instagram=insta,
+        colorscheme=colorscheme,
+        bulletin_text=bulletin_text
+    )
 
 if __name__ == '__main__':
     app.debug = True
