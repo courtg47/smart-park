@@ -5,7 +5,7 @@ import datetime
 
 from datetime import datetime
 
-from . import wunderground
+from helpers import wunderground
 
 
 def gif_picker():
@@ -17,7 +17,7 @@ def gif_picker():
     if current_hour >= 20:
         gif = 'IMG_0023.GIF'
         return gif
-    
+
     elif current_month == 12:
         gif = 'IMG_0024.GIF'
         return gif
@@ -32,6 +32,3 @@ def gif_picker():
 
 
 print(gif_picker())
-
-
-
