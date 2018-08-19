@@ -48,13 +48,14 @@ def bulletins():
 
 
 def _read_arduino_visitors():
-    with open('arduino/output.txt') as f:
+    with open('smartpark/arduino/output.txt') as f:
         peeps = f.readline().strip()
         doggos = f.readline().strip()
     # leaving as strings. We aren't crunching this!
     num_peeps = peeps.split(':')[1].strip()
     num_doggos = doggos.split(':')[1].strip()
     return (num_peeps, num_doggos)
+
 
 def _visitor_bulletin():
     visitors = _read_arduino_visitors()
