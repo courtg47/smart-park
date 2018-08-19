@@ -23,11 +23,11 @@ def gif_picker():
         return gif
 
     elif current_weather is 'Overcast' or 'Mostly Cloudy' or 'Heavy Rain' or 'Light Rain':
-        gif = 'IMG_0022'
+        gif = 'IMG_0022.GIF'
         return gif
 
     else:
-        gif = 'IMG_0021'
+        gif = 'IMG_0021.GIF'
         return gif
 
 
