@@ -6,15 +6,20 @@ body {
 }
 
 .main-title {
-  font-size: 75px;
+  font-size: 85px;
   font-family: 'Indie Flower', cursive;
   text-align: center;
   padding: 3%;
+  text-shadow: 2px 2px #C1C1C1;
 }
 
 /* Large Jumbotron at top of page. */
 .large-image {
   text-align: center;
+}
+
+.container {
+  box-shadow: 3px 3px 20px rgba(0,0,0,0.6);
 }
 
 /* Three boxes split into thirds at bottom of page. */
