@@ -6,9 +6,10 @@ body {
 }
 
 .main-title {
-  font-size: 60px;
+  font-size: 75px;
   font-family: 'Indie Flower', cursive;
   text-align: center;
+  padding: 3%;
 }
 
 /* Large Jumbotron at top of page. */
@@ -23,22 +24,48 @@ body {
 }
 
 /* Box to the left of the grid */
-.first-box {
+.gif-box {
   background-color: #aed6a1;
+  padding: 0;
+}
+
+.gif {
+  width: 100%;
+  height: auto;
 }
 
 /* Box in the middle of the grid */
-.second-box {
-  background-color: #f1c9ae;
+.clock-box {
+  width: 100%;
+  height: auto;
+  background-color: #aed6a1;
+  color: white;
+  padding-top: 10%;
+  font-size: 60px;
+  font-family: 'Orbitron', sans-serif;
 }
 
 /* Box to the right of the grid */
-.third-box {
+.bulletin-box {
   background-color: #f1aeb5;
 }
 
-.fourth-box {
+.bulletin-text {
+  color: white;
+  font-size: 38px;
+  margin-top: 40%;
+  font-family: 'Indie Flower', cursive;
+}
+
+.instagram-box {
   background-color: #d6eaf8;
+  color: white;
+  padding: 0
+}
+
+.instagram-photo {
+  width: 100%;
+  height: auto;
 }
 
 .btn {
@@ -46,51 +73,42 @@ body {
 }
 
 .garnet {
-    background-color: #8B0000;
-    text-color: #FFFFFF;
+    background-color: #990012;
 }
 
 .red {
-    background-color: #8B0000;
-    text-color: #FFFFFF;
+    background-color: #E3120B;
 }
 
 .purple {
-    background-color: #8B0000;
-    text-color: #FFFFFF;
+    background-color: #D57BE7
 }
 
 .aqua {
-    background-color: #8B0000;
-    text-color: #FFFFFF;
+    background-color: #7fffd4;
 }
 
 .yellow {
-    background-color: #8B0000;
+    background-color: #E3D30B;
     text-color: #FFFFFF;
 }
 
 .green {
-    background-color: #8B0000;
-    text-color: #FFFFFF;
+    background-color: #0BE36A;
 }
 
 .orange {
-    background-color: #8B0000;
-    text-color: #FFFFFF;
+    background-color: #E3770B;
 }
 
 .blue {
-    background-color: #8B0000;
-    text-color: #FFFFFF;
+    background-color: #0B9EE3;
 }
 
 .brown {
-    background-color: #8B0000;
-    text-color: #FFFFFF;
+    background-color: #A68652;
 }
 
 .violet {
-    background-color: #8B0000;
-    text-color: #FFFFFF;
+    background-color: #D474F2;
 }

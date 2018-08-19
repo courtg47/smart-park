@@ -26,7 +26,7 @@ $(document).ready(function() {
     // Actual time that will be appended to the screen
     const time = hours + ":" + minutes + ":" + seconds + " " + halfOfDay;
 
-    $(".second-box").html(time);
+    $(".clock-box").html(time);
   }
 
   setInterval(clock, 1000);

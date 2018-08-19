@@ -9,7 +9,7 @@
   <title>Smart Park Project - Magic City Hacks</title>
 
   <!-- Adding in Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Ubuntu" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Orbitron|Ubuntu" rel="stylesheet">
 
   <!-- Setting the viewport for responsiveness -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,32 +40,32 @@
   <main class="main-section">
 
     <section class="jumbotron large-image">
-      <h3>This is a big box.</h3>
+
+      <div class="container">
+
+        <!-- Section containing four boxes -->
+        <section class="row">
+
+          <article class="gif-box grid-fourths col-md-6">
+            <img src="{{ url_for('static', filename='img/' + gif ) }}" class="gif" alt="{{ gif }}">
+          </article>
+
+          <article class="clock-box grid-fourths col-md-6">
+          </article>
+
+          <article class="{{ colorscheme }} bulletin-box grid-fourths col-md-6">
+            <p class="bulletin-text">{{ bulletin_text }}</p>
+          </article>
+
+          <article class="instagram-box grid-fourths col-md-6">
+            <img src="{{ instagram }}" class="instagram-photo" alt="Picture">
+          </article>
+
+        </section>
+
+      </div>
+
     </section>
-
-    <div class="container">
-
-      <!-- Section containing four boxes -->
-      <section class="row">
-
-        <article class="first-box grid-fourths col-md-6">
-          <img src="{{ url_for('static', filename='img/' + gif ) }}" alt="{{ gif }}">
-        </article>
-
-        <article class="{{ colorscheme }} second-box grid-fourths col-md-6">
-        </article>
-
-        <article class="{{ colorscheme }} third-box grid-fourths col-md-6">
-          <p>{{ bulletin_text }}</p>
-        </article>
-
-        <article class="fourth-box grid-fourths col-md-6">
-          <img src="{{ instagram }}" alt="Picture">
-        </article>
-
-      </section>
-
-    </div>
 
   </main>
 
