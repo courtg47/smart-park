@@ -45,7 +45,7 @@ def watch_temps():
     return
 
 def _get_local_temp():
-    with open('arduino/temperature.txt') as f:
+    with open('smartpark/arduino/temperature.txt') as f:
         temp = f.readline().strip()
         temp = int(temp)
     return temp

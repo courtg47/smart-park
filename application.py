@@ -13,7 +13,7 @@ from flask import (
     url_for
 )
 
-from helpers import timepractice, instagram, bulletin_picker, wunderground
+from .helpers import timepractice, instagram, bulletin_picker, wunderground
 
 app = Flask(__name__)
 
