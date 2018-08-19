@@ -42,10 +42,24 @@ def bulletins():
                       'Barons Game: Tonight', 'Magic City Brewfest', 'Birimingham Innovation Week', 'Rock and Roll Bingo: Tonight',
                       'The Three Musketeers Live Show: Brookwood Village', 'Free Art Friday: July 13th', 'McWayne Science Center Celebration',
                       'Birmingham TACO FEST: Avondale', 'Cooking Class at Railroad Park: Sunday', 'Sloss Furnace: Metal Casting Class']
-    bulletin_choice = random.choice(bulletin_board);
+    bulletin_board.append(_visitor_bulletin())
+    bulletin_choice = random.choice(bulletin_board)
     return bulletin_choice
 
 
+def _read_arduino_visitors():
+    with open('arduino/output.txt') as f:
+        peeps = f.readline().strip()
+        doggos = f.readline().strip()
+    # leaving as strings. We aren't crunching this!
+    num_peeps = peeps.split(':')[1].strip()
+    num_doggos = doggos.split(':')[1].strip()
+    return (num_peeps, num_doggos)
 
-print(bulletin_picker())
-
+def _visitor_bulletin():
+    visitors = _read_arduino_visitors()
+    peeps = visitors[0]
+    doggos = visitors[1]
+    # This is a terrible way to write strings #sorrynotsorry
+    bulletin = "We've had " + peeps + " visitors and " + doggos + " canine visitors today!"
+    return bulletin
