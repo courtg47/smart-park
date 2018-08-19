@@ -5,13 +5,13 @@ import datetime
 
 from datetime import datetime
 
-from helpers import wunderground
+from . import wunderground
 
 
 def gif_picker():
 
     current_month = datetime.now().month
-    current_hour = datetime.now().minute
+    current_hour = datetime.now().hour
     current_weather = wunderground.get_weather()
 
     if current_hour >= 20:

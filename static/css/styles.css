@@ -5,11 +5,16 @@ body {
   font-size: 18px;
 }
 
+.header {
+/*  background-color: #D6AEA1; */
+  box-shadow: 3px 6px 12px rgba(0,0,0,0.2);
+}
+
 .main-title {
   font-size: 85px;
   font-family: 'Indie Flower', cursive;
   text-align: center;
-  padding: 3%;
+  padding: 2%;
   text-shadow: 2px 2px #C1C1C1;
 }
 
