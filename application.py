@@ -13,7 +13,7 @@ from flask import (
     url_for
 )
 
-from helpers import timepractice, instagram, bulletin_picker
+from helpers import timepractice, instagram, bulletin_picker, wunderground
 
 app = Flask(__name__)
 
@@ -25,6 +25,8 @@ def homepage():
     bulletin_info = bulletin_picker.bulletin_picker()
     colorscheme = bulletin_info[1]
     bulletin_text = bulletin_info[0]
+
+    wunderground.watch_temps() # do a little data wactching. Just because
 
     return render_template(
         'index.html',

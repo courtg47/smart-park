@@ -1,0 +1,2 @@
+People Count: 20
+Dog Count: 23
