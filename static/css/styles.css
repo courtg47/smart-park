@@ -29,16 +29,16 @@ body {
 
 /* Box in the middle of the grid */
 .second-box {
-  background-color: #F1C9AE;
+  background-color: #f1c9ae;
 }
 
 /* Box to the right of the grid */
 .third-box {
-  background-color: #F1AEB5;
+  background-color: #f1aeb5;
 }
 
 .fourth-box {
-  background-color: #D6EAF8;
+  background-color: #d6eaf8;
 }
 
 .btn {

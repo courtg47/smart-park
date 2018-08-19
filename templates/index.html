@@ -28,6 +28,9 @@
   <!-- Linking CSS Stylesheet -->
   <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/styles.css') }}">
 
+  <!-- External Javascript file -->
+  <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+
 </head>
 
 <body>
@@ -42,7 +45,7 @@
 
     <div class="container">
 
-      <!-- Section containing three boxes -->
+      <!-- Section containing four boxes -->
       <section class="row">
 
         <article class="first-box grid-fourths col-md-6">
@@ -52,7 +55,6 @@
         </article>
 
         <article class="bulletin.colorscheme second-box grid-fourths col-md-6">
-          {{ clock }}
         </article>
 
         <article class="bulletin.colorscheme third-box grid-fourths col-md-6">
