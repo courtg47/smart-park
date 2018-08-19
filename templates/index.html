@@ -49,16 +49,15 @@
       <section class="row">
 
         <article class="first-box grid-fourths col-md-6">
-          <img src="{{ gif }}" alt="Gif">
+        <!--  <img src="{{ gif }}" alt="Gif"> -->
+          <img src="{{ url_for('static', filename='img/' + gif ) }}" alt="{{ gif }}">
         </article>
 
         <article class="bulletin.colorscheme second-box grid-fourths col-md-6">
         </article>
 
         <article class="bulletin.colorscheme third-box grid-fourths col-md-6">
-          { % for i in bulletin %}
-          <p>{{ i }}</p>
-          { % endfor % }
+          <p>{{ bulletin_text }}</p>
         </article>
 
         <article class="fourth-box grid-fourths col-md-6">

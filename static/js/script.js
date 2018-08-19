@@ -1,6 +1,9 @@
 // JavaScript
 $(document).ready(function() {
 
+  // Reload page every 4 minutes
+  window.setInterval('reloadPage()', 24000);
+
   function clock() {
     const date = new Date();
     let hours = date.getHours();
@@ -29,3 +32,8 @@ $(document).ready(function() {
   setInterval(clock, 1000);
 
 });
+
+// Reload page
+function reloadPage() {
+    window.location.reload(true);
+}
