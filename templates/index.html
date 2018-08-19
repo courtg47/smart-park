@@ -45,19 +45,26 @@
       <!-- Section containing three boxes -->
       <section class="row">
 
-        <article class="first-box grid-thirds col-md-4">
-          <p>Hello</p>
-          <button type="button" class="btn btn-secondary">Secondary</button>
+        <article class="first-box grid-fourths col-md-6">
+          { % for i in gifs %}
+          <img src="{{ gif }}" alt="Gif">
+          { % endfor % }
         </article>
 
-        <article class="second-box grid-thirds col-md-4">
-          <p>Hello</p>
-          <button type="button" class="btn btn-success">Success</button>
+        <article class="bulletin.colorscheme second-box grid-fourths col-md-6">
+          {{ clock }}
         </article>
 
-        <article class="third-box grid-thirds col-md-4">
-          <p>Hello</p>
-          <button type="button" class="btn btn-danger">Danger</button>
+        <article class="bulletin.colorscheme third-box grid-fourths col-md-6">
+          { % for i in bulletin %}
+          <p>{{ i }}</p>
+          { % endfor % }
+        </article>
+
+        <article class="fourth-box grid-fourths col-md-6">
+          { % for i in instagram_pics %}
+          <img src="{{ i }}" alt="Picture">
+          { % endfor % }
         </article>
 
       </section>
