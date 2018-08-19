@@ -2,6 +2,6 @@
 
 from helpers import wunderground, instagram, serial_test
 
-#print(wunderground.get_weather_data())
+wunderground.clean_weather_info()
 #print(instagram.get_test_media())
-serial_test.do_stuff()
+#serial_test.do_stuff()

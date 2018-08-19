@@ -68,3 +68,8 @@ def get_media_urls():
 def get_test_media():
     print(get_media_urls())
     return
+
+
+def get_recent_instagram():
+    urls = get_media_urls()
+    return urls[0]
