@@ -5,7 +5,7 @@ import datetime
 
 from datetime import datetime
 
-import wunderground
+from helpers import wunderground
 
 
 def gif_picker():
