@@ -13,12 +13,17 @@ from flask import (
     url_for
 )
 
+from helpers import timepractice
+
 app = Flask(__name__)
 
 @app.route('/')
 def homepage():
     """ Render the homepage. """
-    return render_template('index.html')
+    # bulletin = helpers.bulletin
+    the_gif = timepractice.gif_picker()
+
+    return render_template('index.html', gif=the_gif)
 
 if __name__ == '__main__':
     app.debug = True
